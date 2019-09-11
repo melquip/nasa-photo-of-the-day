@@ -22,21 +22,21 @@ In this project you will build out a application to show the nasa photo of the d
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
-- [ ] Create a forked copy of this project.
+- [x] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Clone your OWN version of the repository in your terminal
+- [x] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [x] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge Branch into master (student's Repository).
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Do your magic!
 
 # _Project - NASA APOD - Part I_
 
@@ -47,19 +47,19 @@ Follow these steps for completing your project.
 
 ## Directions
 
-**Step 1 - Planning**
+- [x] **Step 1 - Planning**
 
 - If you want, this is the time to make a simple design spec (look up ["simple wireframes"](https://www.google.com/search?q=simple+wireframes) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
 - Once you have a design plan in mind, break down the designs into individual components.
 - Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
 - Now it's time to jump into the code!
 
-**Step 2 - File structure**
+- [x] **Step 2 - File structure**
 
 - Take a look at your planned components. Create the folders and files you need for each component.
 - Leave most of them blank for now - you need to get your data from the API before you can really get these built.
 
-**Step 3 - Fetching the Data**
+- [x] **Step 3 - Fetching the Data**
 
 - In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
 - Add an effect hook to handle the API call side effect.
@@ -77,7 +77,7 @@ DEMO KEY rate limits:
 
 _Note: if the photo url is NOT a photo, you will need to learn how to display a video in a React app on your own, OR just fetch the APOD from a different date by adding this to the back of the API endpoint: `&date=2012-03-14`_
 
-**Step 4 - Adding the Data to State**
+- [x] **Step 4 - Adding the Data to State**
 
 - Once you have made the call correctly, and logged the data, add the data to the state property you built.
 
