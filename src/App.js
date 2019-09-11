@@ -24,15 +24,18 @@ function App({ apiKey }) {
 				!data ?
 					<div className="loading">Loading...</div> :
 					<div className="content">
-						<APITitle text={data.title} />
-						<APIDate date={data.date} />
-						<APISummary text={data.explanation} />
-						<APIImage 
-							hd={false} 
-							source={data.url} 
-							hdsource={data.hdurl} 
-							text={data.title}
-						/>
+						<div className="header">
+							<APITitle text={data.title} />
+							<APIDate date={data.date} />
+						</div>
+						<div className="flex">
+							<APISummary text={data.explanation} />
+							<APIImage 
+								hd={false} 
+								source={data.url} 
+								text={data.title}
+							/>
+						</div>
 					</div>
 			}
 		</div>

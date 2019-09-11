@@ -23,7 +23,7 @@ In this project you will build out a application to show the nasa photo of the d
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
 - [x] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
+- [x] Add your team lead as collaborator on Github.
 - [x] Clone your OWN version of the repository in your terminal
 - [x] Download project dependencies by running one of these two commands `yarn` or `npm install`
 - [x] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
@@ -33,8 +33,8 @@ This project was put together using create-react-app (CRA). You will not need to
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge Branch into master (student's Repository).
-- [ ] Add your team lead as a reviewer on the pull-request
+- [x] Submit a Pull-Request to merge Branch into master (student's Repository).
+- [x] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [x] Do your magic!
 
@@ -81,7 +81,7 @@ _Note: if the photo url is NOT a photo, you will need to learn how to display a 
 
 - Once you have made the call correctly, and logged the data, add the data to the state property you built.
 
-**Step 5 - Display the Data**
+- [x] **Step 5 - Display the Data**
 Now is the time to build out your other components. Compose your UI, and then pass the data to your children components via props so you can render it on the DOM.
 
 ## _MVP Requirements:_
