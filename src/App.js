@@ -8,34 +8,50 @@ import { APIImage } from "./APIImage";
 
 
 function App({ apiKey }) {
-	const [data, setData] = useState({});
+	const [info, setInfo] = useState({});
+
+	let today = new Date().toISOString().substr(0, 10);
+	const [currDate, setDate] = useState(today);
+	
 	useEffect(() => {
-		axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&hd=false`)
+		axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&hd=false&date=${currDate}`)
 			.then(response => {
 				console.log(response.data);
-				setData(response.data);
+				setInfo(response.data);
 			})
 			.catch(error => console.error(error));
-		return () => console.log('cleanup')
-	}, [apiKey]);
+		return () => setInfo({})
+	}, [apiKey, currDate]);
 	return (
 		<div className="App">
 			{
-				!data ?
+				!info ?
 					<div className="loading">Loading...</div> :
 					<div className="content">
 						<div className="header">
-							<APITitle text={data.title} />
-							<APIDate date={data.date} />
+							<APITitle text={info.title} />
+							<APIDate date={currDate} setDate={setDate} today={today} />
 						</div>
 						<div className="flex">
-							<APISummary text={data.explanation} />
-							<APIImage 
-								hd={false} 
-								source={data.url} 
-								text={data.title}
-							/>
+							<APISummary text={info.explanation} />
+							{
+								info.media_type === 'image' ? 
+								<APIImage 
+									hd={false} 
+									source={info.url} 
+									text={info.title}
+								/> : 
+								<iframe src={info.url} title={info.title}></iframe>
+							}
 						</div>
+						{
+							info.media_type === 'image' ? 
+							<APIImage 
+								hd={true} 
+								source={info.hdurl} 
+								text={info.title}
+							/> : null
+						}
 					</div>
 			}
 		</div>

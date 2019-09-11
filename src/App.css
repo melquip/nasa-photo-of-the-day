@@ -26,6 +26,18 @@ body {
 	margin-bottom: 2rem;
 }
 
+.content .header > :first-child {
+	width: 100%;
+	max-width: 75%;
+	flex-basis: 75%;
+}
+.content .header > :last-child {
+	width: 100%;
+	max-width: 25%;
+	flex-basis: 25%;
+	text-align: right;
+}
+
 .content .flex {
 	display: flex;
 	padding-top: 2rem;
@@ -64,4 +76,10 @@ body {
 }
 .content .summary p:first-child {
 	margin-top: 0;
+}
+
+.content img.hdimg {
+	width: 100%;
+	margin-top: 3rem;
+	object-fit: contain;
 }
