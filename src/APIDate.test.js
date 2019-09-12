@@ -1,10 +1,21 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import { APIDate } from "./APIDate";
+import { create, act } from 'react-test-renderer';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  const today = new Date().toISOString().substr(0, 10);
-  ReactDOM.render(<APIDate date={today} setDate={() => {}} today={today} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+	let res;
+	const today = new Date().toISOString().substr(0, 10);
+	act(() => {
+		res = create(<APIDate date={today} setDate={() => { }} today={today} />);
+	})
+	expect(res.toJSON()).toMatchSnapshot();
+});
+
+it('renders correctly', () => {
+	let res;
+	const today = new Date().toISOString().substr(0, 10);
+	act(() => {
+		res = create(<APIDate date={today} setDate={() => { }} today={today} />);
+	})
+	expect(res.toJSON()).toMatchSnapshot();
 });
