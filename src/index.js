@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./globalStyles.js";
 import App from "./App";
 
 const NASA_API_KEY = process.env.REACT_APP_API_KEY;
