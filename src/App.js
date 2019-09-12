@@ -5,7 +5,7 @@ import { APISummary } from "./APISummary";
 import { APIDate } from "./APIDate";
 import { APIImage } from "./APIImage";
 
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const Container = styled.div`
 	background: radial-gradient(rgb(235,235,235) 3px, transparent 4px), radial-gradient(rgb(235,235,235) 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, rgb(235,235,235) 75px, rgb(235,235,235) 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, rgb(235,235,235) 76px, rgb(235,235,235) 77px, transparent 78px, transparent 109px),
@@ -28,7 +28,7 @@ const Container = styled.div`
 	}
 	.summary p {
 		margin-top: 1rem;
-		&:first-child {
+		&:first-of-type {
 			margin-top: 0;
 		}
 	}
@@ -43,7 +43,7 @@ const Header = styled.div`
 	border-bottom: 1px solid black;
 	margin-bottom: 2rem;
 
-	& > :first-child {
+	& > :first-of-type {
 		width: 100%;
 		max-width: 75%;
 		flex-basis: 75%;
@@ -60,7 +60,7 @@ const Flex = styled.div`
 	display: flex;
 	padding-top: 2rem;
 	justify-content: space-between;
-	& > :first-child, & > :last-child  {
+	& > :first-of-type, & > :last-child  {
 		width: 100%;
 		max-width: calc(50% - 1rem);
 		flex-basis: calc(50% - 1rem);
