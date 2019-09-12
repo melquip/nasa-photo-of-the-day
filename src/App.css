@@ -1,3 +1,4 @@
+/*
 @import 'reset.css';
 
 * {
@@ -44,6 +45,7 @@ body {
 	justify-content: space-between;
 }
 
+
 .content .flex > :first-child, .content .flex > :last-child  {
 	width: 100%;
 	max-width: calc(50% - 1rem);
@@ -56,6 +58,7 @@ body {
 	object-fit: cover;
 	object-position: center;
 }
+
 
 .content h1 {
 	font-size: 3.5rem;
@@ -90,3 +93,4 @@ body {
 	line-height: 1.2rem;
 	border-bottom: 1px solid #000;
 }
+*/

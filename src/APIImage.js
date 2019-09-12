@@ -1,4 +1,4 @@
 import React from "react";
-export function APIImage({ text, source, hd }) {
-	return <img className={hd ? 'hdimg' : null} src={source} alt={text} />;
+export function APIImage({ className, text, source, hd }) {
+	return <img className={className + (hd ? ' hdimg' : '')} src={source} alt={text} />;
 }
