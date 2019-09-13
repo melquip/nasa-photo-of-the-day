@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="content css-ijtea1"
+  >
+    <div
+      className="header css-1qtucqp"
+    >
+      <h1 />
+      <div
+        className="date"
+      >
+        <input
+          max="2019-09-12"
+          min="2018-01-01"
+          onChange={[Function]}
+          type="date"
+          value="2019-09-12"
+        />
+      </div>
+    </div>
+    <div
+      className="css-oswmsz"
+    >
+      <div
+        className="summary"
+      >
+        <p>
+          Loading...
+        </p>
+      </div>
+      <iframe />
+    </div>
+  </div>
+  <div
+    className="loading"
+  >
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`renders without crashing 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="content css-ijtea1"
+  >
+    <div
+      className="header css-1qtucqp"
+    >
+      <h1 />
+      <div
+        className="date"
+      >
+        <input
+          max="2019-09-12"
+          min="2018-01-01"
+          onChange={[Function]}
+          type="date"
+          value="2019-09-12"
+        />
+      </div>
+    </div>
+    <div
+      className="css-oswmsz"
+    >
+      <div
+        className="summary"
+      >
+        <p>
+          Loading...
+        </p>
+      </div>
+      <iframe />
+    </div>
+  </div>
+  <div
+    className="loading"
+  >
+    Loading...
+  </div>
+</div>
+`;
